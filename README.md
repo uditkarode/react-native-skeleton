@@ -15,4 +15,4 @@ It involves:
 * newest gradle version for android
 * removal of jcenter from android, since it's deprecated
   
-After you run `react-native init`, you can pick the patches after the commit which added this README.
+After you run `react-native init`, `cd` into the project folder and run [skeleton.sh](https://github.com/uditkarode/react-native-skeleton/raw/master/skeleton.sh) from this repository.

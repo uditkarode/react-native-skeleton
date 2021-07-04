@@ -17,8 +17,8 @@ fi
 git fetch https://github.com/uditkarode/react-native-skeleton master
 
 # cherry-pick commits
-git cherry-pick -S --strategy-option theirs 37dd2a38d3aabfdef46797feeb168b4c6937ea4a
-git cherry-pick -S --strategy-option theirs 37dd2a38d3aabfdef46797feeb168b4c6937ea4a..e5026547729259a501918bc83291de7f9e17eeac
+git cherry-pick --strategy-option theirs 37dd2a38d3aabfdef46797feeb168b4c6937ea4a
+git cherry-pick --strategy-option theirs 37dd2a38d3aabfdef46797feeb168b4c6937ea4a..e5026547729259a501918bc83291de7f9e17eeac
 
 # Re-fetch dependencies
 yarn

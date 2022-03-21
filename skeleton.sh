@@ -18,13 +18,17 @@ git fetch https://github.com/uditkarode/react-native-skeleton master
 
 # cherry-pick commits
 git cherry-pick --strategy-option theirs 37dd2a38d3aabfdef46797feeb168b4c6937ea4a
-git cherry-pick --strategy-option theirs 37dd2a38d3aabfdef46797feeb168b4c6937ea4a..e5026547729259a501918bc83291de7f9e17eeac
+git cherry-pick --strategy-option theirs 4810196210c0177ed9a0ab2b055233ce368ec5bb
+rm -r __tests__ App.js
+git add -A
+git commit -S -m "[rm:root] remove sample files"
+git cherry-pick --strategy-option theirs 4810196210c0177ed9a0ab2b055233ce368ec5bb..e5026547729259a501918bc83291de7f9e17eeac
+rm projectFixer.sh
+git add -A
+git commit -S -m "[rm:root] remove unneeded script"
 
 # Re-fetch dependencies
 yarn
-
-# Run projectFixer to get around some issues
-bash projectFixer.sh
 
 # Profit!
 echo && echo "Operation was a success!"
